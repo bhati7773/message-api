@@ -1,6 +1,8 @@
 const exp = require('express')
+const cors = require('cors')
 const app = exp()
 app.use(exp.json())
+app.use(cors())
 app.use(exp.urlencoded({ extended: true }))
 
 app.get('/', function(req, res){
