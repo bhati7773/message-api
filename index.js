@@ -3,6 +3,9 @@ const app = exp()
 app.use(exp.json())
 app.use(exp.urlencoded({ extended: true }))
 
+app.get('/', function(req, res){
+    res.send("hello")
+})
 app.post('/form_sign', function (req, res) {
     try {
         const data = req.body
