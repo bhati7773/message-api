@@ -33,8 +33,6 @@ app.post('/message', function (req, res) {
             msg:"Message send succesfully !!",
             status:true
         })
-
-
     }
    catch(error){
         res.status(500).json({
